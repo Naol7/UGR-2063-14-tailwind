@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Naol's <span>Portfolio</span></h2>
+            <ul>
+                <li> <a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="cv.html" target="_blank">CV</a></li>
+            </ul>
+    </nav>
+</header>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me using the form below or through the provided contact information.</p>
+
+        <form action="process_form.php" method="post">
+            <label for="name" >Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>You can also reach me through the following channels:</p>
+        <p>Email: <a href="mailto:naolgezahegne@gmail.com">Email</a></p>
+        <p>Twitter: <a href="https://x.com/N1sup" target="_blank">Twitter</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a></p>
+    </section>
+    <figure>
+        <img src="images/prof.jpg" alt="my twitter profile">
+    </figure>
+<button onclick="window.location.href='hobbies.html'">previous</button>
+<button onclick="window.location.href='cv.html'">Next</button>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="https://x.com/N1sup">my twitter</a></li>
+            <li><a href="https://linkedin.com/in/naol-gezahegne">my linkedin</a></li>
+            <li><a href="mailto:naolgezahegne@gmail.com">email me</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2023 Naol. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>
