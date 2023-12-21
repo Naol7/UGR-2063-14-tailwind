@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
+<body class="text-white bg-slate-900">
+      <header>
         <nav>
-            <h2 class="logo">Naol's <span>Portfolio</span></h2>
-            <ul>
-                <li> <a href="home.html" target="_blank">Home</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-                <li><a href="cv.html" target="_blank">CV</a></li>
+            <h2 class="text-red-400 text-2xl py-4">Naol's <span>Portfolio</span></h2>
+            <ul class="flex absolute top-0 right-0 space-x-4 text-gray-500 p-2">
+                <li class="text-xl hover:text-red-700"><a href="home.html" target="_blank">Home</a></li>
+                <li class="text-xl hover:text-red-700"><a href="about.html" target="_blank">About</a></li>
+                <li class="text-xl hover:text-red-700"><a href="hobbies.html" target="_blank">Hobbies</a></li>
+                <li class="text-xl hover:text-red-700"><a href="contact.html" target="_blank">Contact</a></li>
+                <li class="text-xl hover:text-red-700"><a href="cv.html" target="_blank">CV</a></li>
             </ul>
-    </nav>
-</header>
+        </nav>
+    </header>
 <section id="cv">
-    <h2>Curriculum Vitae</h2>
+    <h2 class="text-4xl font-bold">Curriculum Vitae</h2>
     <div class="personal-info">
-        <h3>Naol Gezahegne</h3>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/naol-gezahegne" target="_blank">My LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/Naol7" target="_blank">My GitHub Profile</a></p>
+        <h3 class="font-bold">Naol Gezahegne</h3>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/naol-gezahegne" target="_blank" class="hover:text-red-700 text-blue-500 underline">My LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Naol7" target="_blank" class="hover:text-red-700 text-blue-500 underline">My GitHub Profile</a></p>
     </div>
     <div class="education">
-        <h3>Education</h3>
+        <h3 class="text-2xl font-bold">Education</h3>
         <p><strong>Addis Ababa institute of Technology</strong> - Software Engineering - 2027</p>
     </div>
 
     <div class="skills">
-        <h3>Programming languages</h3>
+        <h3 class="text-2xl font-bold">Programming languages</h3>
         <ul>
             <li>Python</li>
             <li>Java</li>
@@ -40,7 +41,7 @@
     </div>
     
     <div class="Highschool">
-        <h3>Highschool</h3>
+        <h3 class="text-2xl font-bold">Highschool</h3>
         <p>Burka Harbu Secondary School(2017-2020) </p>
         <p>My Highschool Transcript</p>
         <iframe src="images/Transcript.pdf" allowfullscreen></iframe>
@@ -48,18 +49,18 @@
 
     </div>   
 </section>
-<button onclick="window.location.href='contact.html'">Previous</button>
+<button onclick="window.location.href='contact.html'" class="justify-end my-4 mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Previous</button>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="https://x.com/N1sup">twitter</a></li>
-                <li><a href="https://linkedin.com/in/naol-gezahegne">linkedin</a></li>
-                <li><a href="mailto:naolgezahegne@gmail.com">email</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Naol. All rights reserved.</p>
-    </footer>
+<footer class="bg-gray-800 text-white py-4 px-8 flex flex-col justify-center items-center border-t border-gray-700">
+    <nav>
+        <ul class="uppercase">
+            <li class="hover:text-red-700"><a href="https://x.com/N1sup">twitter</a></li>
+            <li class="hover:text-red-700"><a href="https://linkedin.com/in/naol-gezahegne ">linkedin</a></li>
+            <li class="hover:text-red-700"><a href="mailto:naolgezahegne@gmail.com">email</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2023 Naol. All rights reserved.</p>
+</footer>
      
 
     

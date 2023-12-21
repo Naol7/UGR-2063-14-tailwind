@@ -6,58 +6,66 @@
     <title>Contact Me</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
+<body class="text-white bg-slate-900">
+      <header>
         <nav>
-            <h2 class="logo">Naol's <span>Portfolio</span></h2>
-            <ul>
-                <li> <a href="home.html" target="_blank">Home</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-                <li><a href="cv.html" target="_blank">CV</a></li>
+            <h2 class="text-red-400 text-2xl py-4">Naol's <span>Portfolio</span></h2>
+            <ul class="flex absolute top-0 right-0 space-x-4 text-gray-500 p-2">
+                <li class="text-xl hover:text-red-700"><a href="home.html" target="_blank">Home</a></li>
+                <li class="text-xl hover:text-red-700"><a href="about.html" target="_blank">About</a></li>
+                <li class="text-xl hover:text-red-700"><a href="hobbies.html" target="_blank">Hobbies</a></li>
+                <li class="text-xl hover:text-red-700"><a href="contact.html" target="_blank">Contact</a></li>
+                <li class="text-xl hover:text-red-700"><a href="cv.html" target="_blank">CV</a></li>
             </ul>
-    </nav>
-</header>
-    <section id="contact">
-        <h2>Contact Me</h2>
+        </nav>
+    </header>
+    <section>
+        <h2 class="text-4xl font-bold">Contact Me</h2>
         <p>Feel free to reach out to me using the form below or through the provided contact information.</p>
 
-        <form action="process_form.php" method="post">
-            <label for="name" >Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
+        <form class=" my-2 max-w-md mx-auto p-8 bg-blue-900 shadow-lg rounded text-left" action="process_form.php" method="post">
+            <div class="mb-4">
+                <label for="name" class="block text-white text-sm font-bold mb-2">Your Name:</label>
+                <input type="text" id="name" name="name" required class="block w-full px-4 py-2 text-white border rounded">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-white text-sm font-bold mb-2">Your Email:</label>
+                <input type="email" id="email" name="email" required class="block w-full px-4 py-2 text-white border rounded">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-white text-sm font-bold mb-2">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required class="block w-full px-4 py-2 text-gray-700 border rounded"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-700">Submit</button>
+            </div>
         </form>
+        
+        
     </section>
     <section id="contact-info">
-        <h2>Contact Information</h2>
+        <h2 class="text-2xl font-bold">Contact Information</h2>
         <p>You can also reach me through the following channels:</p>
-        <p>Email: <a href="mailto:naolgezahegne@gmail.com">Email</a></p>
-        <p>Twitter: <a href="https://x.com/N1sup" target="_blank">Twitter</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a></p>
+        <p>Email: <a href="mailto:naolgezahegne@gmail.com" class="hover:text-red-700 underline text-blue-500">Email Me</a></p>
+        <p>Twitter: <a href="https://x.com/N1sup" target="_blank" class="hover:text-red-700 underline text-blue-500">My Twitter</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank" class="hover:text-red-700 underline text-blue-500">My LinkedIn</a></p>
     </section>
-    <figure>
-        <img class="rounded-full" src="images/prof.jpg" alt="my twitter profile">
+    <figure class="text-center">
+        <img class="mx-auto rounded-full w-64 h-64 object-contain" src="images/prof.jpg" alt="my twitter profile">
     </figure>
-<button onclick="window.location.href='hobbies.html'">previous</button>
-<button onclick="window.location.href='cv.html'">Next</button>
-<footer>
+    <div class="my-4 flex justify-end">
+        <button onclick="window.location.href='hobbies.html'" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Previous</button>
+        <button onclick="window.location.href='cv.html'" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Next</button>
+    </div>
+<footer class="bg-gray-800 text-white py-4 px-8 flex flex-col justify-center items-center border-t border-gray-700">
     <nav>
-        <ul>
-            <li><a href="https://x.com/N1sup">my twitter</a></li>
-            <li><a href="https://linkedin.com/in/naol-gezahegne">my linkedin</a></li>
-            <li><a href="mailto:naolgezahegne@gmail.com">email me</a></li>
+        <ul class="uppercase">
+            <li class="hover:text-red-700"><a href="https://x.com/N1sup">twitter</a></li>
+            <li class="hover:text-red-700"><a href="https://linkedin.com/in/naol-gezahegne ">linkedin</a></li>
+            <li class="hover:text-red-700"><a href="mailto:naolgezahegne@gmail.com">email</a></li>
         </ul>
     </nav>
     <p>&copy; 2023 Naol. All rights reserved.</p>
 </footer>
-    
 </body>
 </html>
