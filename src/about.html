@@ -4,74 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Naol</title>
-    <link rel="stylesheet" href="style.css">
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+<body class="text-white bg-slate-900">
    <header>
     <nav>
-        <h2 class="logo">Naol's <span>Portfolio</span></h2>
-        <ul>
-            <li> <a href="home.html" target="_blank">Home</a></li>
-            <li><a href="about.html" target="_blank">About</a></li>
-            <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-            <li><a href="cv.html" target="_blank">CV</a></li>
+        <h2 class="text-red-400 text-2xl py-4">Naol's <span>Portfolio</span></h2>
+        <ul class="flex absolute top-0 right-0 space-x-4 text-gray-500 p-2">
+            <li class="text-xl hover:text-red-700"><a href="home.html" target="_blank">Home</a></li>
+            <li class="text-xl hover:text-red-700"><a href="about.html" target="_blank">About</a></li>
+            <li class="text-xl hover:text-red-700"><a href="hobbies.html" target="_blank">Hobbies</a></li>
+            <li class="text-xl hover:text-red-700"><a href="contact.html" target="_blank">Contact</a></li>
+            <li class="text-xl hover:text-red-700"><a href="cv.html" target="_blank">CV</a></li>
         </ul>
     </nav>
 </header>
-    <main class="main">
-        <h2 id="abt">About <span>Me</span></h2>
-        <p id="intro">I am currently a <em>third-year</em> student pursuing a degree in <strong>software engineering</strong> at <cite>Addis Ababa Institute of Technology (AAiT)</cite>. Coding is a passion that resonates with me, and I thoroughly enjoy delving into the intricacies of software development. As a dedicated and hardworking student, I consistently strive to give my best in all academic endeavors. If you wish to learn more about me, explore the array of skills I've cultivated, the inspirations that drive my work, and the places I aspire to visit are detailed in the following sections </p>
-</main>
-<article>
-    <h3 id="skills">Skills</h3>
-    <p>Throughout the years, I have cultivated a myriad of skills that play a pivotal role in both my daily existence and academic pursuits. Presented below is an inventory of the skills I have nurtured and refined over time.</p>
-    <ul>
-        <li>Problem solving</li>
-        <li>Coding</li>
-        <li>Socialising</li>
-        <li>Playing sports</li>
-        <li>Time management</li>
-    </ul>
-
-    <h3 id="inspirations">Inspirations</h3>
-    <p>My inspirations are diverse and multifaceted, drawn from various aspects of life and experiences. I find inspiration in the relentless pursuit of knowledge, a trait I admire in both historical figures and contemporary thought leaders. The resilience of individuals who have overcome adversity fuels my motivation, reminding me of the power of determination and courage. Creativity, whether expressed through art, literature, or technological innovation, captivates my imagination and serves as a wellspring of inspiration. Additionally, the supportive communities around me, including family, friends, and mentors, contribute profoundly to my aspirations. Ultimately, my inspirations form a dynamic tapestry, woven with the threads of passion, perseverance, and a continuous quest for personal and intellectual growth.</p>
-    <h3 id="places">Places to visit</h3>
-    <p>I want to visit a several places all over the world. So far, I have only visited few places that grabbed my attention. Although there are many places in and out of the country that I'd love to visit. Bale Mountains National Park is the place I'd like to visit the most. The prospect of exploring the pristine landscapes of the Harenna Forest and the expansive Sanetti Plateau is an enticing adventure. Beyond the scenic vistas, the park offers a unique opportunity to witness the endangered Ethiopian wolf in its native environment, adding an element of rarity and ecological significance to the experience. I have summarised list of places I want to visit in the following table.</p>
-</article>
-    <table>
-        <thead>
-            <tr>
-                <th>Place</th>
-                <th>Location</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bale Mountains National Park</td>
-                <td>Southeastern Ethiopia</td>
-                <td>Bale Mountains National Park in Ethiopia features stunning landscapes, including the Harenna Forest and Sanetti Plateau. Ideal for trekking and wildlife enthusiasts, it offers a rare chance to witness the endangered Ethiopian wolf in its natural habitat.</td>
-            </tr>
-            <tr>
-                <td>Lalibela Rock-Hewn Churches</td>
-                <td>Northern Ethiopia</td>
-                <td>Lalibela is known for its 11 medieval churches carved out of solid rock, each with unique architectural features and religious significance. A UNESCO World Heritage Site.</td>
-            </tr>
-            <tr>
-                <td>Simien Mountains</td>
-                <td>Northern Ethiopia</td>
-                <td>A stunning mountain range with deep valleys, high plateaus, and unique wildlife, including the Ethiopian wolf and Walia ibex. Popular for trekking and breathtaking landscapes.</td>
-            </tr>
-            <tr>
-                <td>Halala Kela Resort</td>
-                <td>Southwestern Ethiopia</td>
-                <td>Halala Kela is a luxury resort located in the southwestern Ethiopia, near the lake created by the Gilgel Gibe III dam</td>
-            </tr>
-    </table>
-    <p>here's a short video of the Bale Mountains National Park</p>
-    <video src="images/balePark.mp4" controls>Bale National</video>
-
-<aside>
+<aside class="w-1/6 bg-gray-800 text-white p-4 rounded-lg">
     <nav>
         <ul>
             <li><a href="#skills">Skills</a></li>
@@ -80,14 +27,67 @@
         </ul>
     </nav>
 </aside>
-<button onclick="window.location.href='index.html'">previous</button>
-<button onclick="window.location.href='hobbies.html'">Next</button>
-<footer>
+        <h2 class="text-4xl font-bold">About <span>Me</span></h2>
+        <p>I am currently a <em>third-year</em> student pursuing a degree in <strong>software engineering</strong> at <cite>Addis Ababa Institute of Technology (AAiT)</cite>. Coding is a passion that resonates with me, and I thoroughly enjoy delving into the intricacies of software development. As a dedicated and hardworking student, I consistently strive to give my best in all academic endeavors. If you wish to learn more about me, explore the array of skills I've cultivated, the inspirations that drive my work, and the places I aspire to visit are detailed in the following sections </p>
+</main>
+<article>
+    <h3 class="text-2xl font-bold" id="skills">Skills</h3>
+    <p>Throughout the years, I have cultivated a myriad of skills that play a pivotal role in both my daily existence and academic pursuits. Presented below is an inventory of the skills I have nurtured and refined over time.</p>
+    <ul class="list-disc list-outside marker:text-green ml-6">
+        <li>Problem solving</li>
+        <li>Coding</li>
+        <li>Socialising</li>
+        <li>Playing sports</li>
+        <li>Time management</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold" id="inspirations">Inspirations</h3>
+    <p>My inspirations are diverse and multifaceted, drawn from various aspects of life and experiences. I find inspiration in the relentless pursuit of knowledge, a trait I admire in both historical figures and contemporary thought leaders. The resilience of individuals who have overcome adversity fuels my motivation, reminding me of the power of determination and courage. Creativity, whether expressed through art, literature, or technological innovation, captivates my imagination and serves as a wellspring of inspiration. Additionally, the supportive communities around me, including family, friends, and mentors, contribute profoundly to my aspirations. Ultimately, my inspirations form a dynamic tapestry, woven with the threads of passion, perseverance, and a continuous quest for personal and intellectual growth.</p>
+    <h3 class="text-2xl font-bold" id="places">Places to visit</h3>
+    <p>I want to visit a several places all over the world. So far, I have only visited few places that grabbed my attention. Although there are many places in and out of the country that I'd love to visit. Bale Mountains National Park is the place I'd like to visit the most. The prospect of exploring the pristine landscapes of the Harenna Forest and the expansive Sanetti Plateau is an enticing adventure. Beyond the scenic vistas, the park offers a unique opportunity to witness the endangered Ethiopian wolf in its native environment, adding an element of rarity and ecological significance to the experience. I have summarised list of places I want to visit in the following table.</p>
+</article>
+    <table class="table-auto border-collapse border">
+        <thead>
+            <tr>
+                <th class="border p-2">Place</th>
+                <th class="border p-2">Location</th>
+                <th class="border p-2">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border p-2">Bale Mountains National Park</td>
+                <td class="border p-2">Southeastern Ethiopia</td>
+                <td class="border p-2">Bale Mountains National Park in Ethiopia features stunning landscapes, including the Harenna Forest and Sanetti Plateau. Ideal for trekking and wildlife enthusiasts, it offers a rare chance to witness the endangered Ethiopian wolf in its natural habitat.</td>
+            </tr>
+            <tr>
+                <td class="border p-2">Lalibela Rock-Hewn Churches</td>
+                <td class="border p-2">Northern Ethiopia</td>
+                <td class="border p-2">Lalibela is known for its 11 medieval churches carved out of solid rock, each with unique architectural features and religious significance. A UNESCO World Heritage Site.</td>
+            </tr>
+            <tr>
+                <td class="border p-2">Simien Mountains</td>
+                <td class="border p-2">Northern Ethiopia</td>
+                <td class="border p-2">A stunning mountain range with deep valleys, high plateaus, and unique wildlife, including the Ethiopian wolf and Walia ibex. Popular for trekking and breathtaking landscapes.</td>
+            </tr>
+            <tr>
+                <td class="border p-2">Halala Kela Resort</td>
+                <td class="border p-2">Southwestern Ethiopia</td>
+                <td class="border p-2">Halala Kela is a luxury resort located in the southwestern Ethiopia, near the lake created by the Gilgel Gibe III dam</td>
+            </tr>
+    </table>
+    <p>here's a short video of the Bale Mountains National Park</p>
+    <video class="rounded-md w-80 my-4" src="images/balePark.mp4" controls>Bale National</video>
+<div class="my-4">
+    <button onclick="window.location.href='home.html'" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Previous</button>
+    <button onclick="window.location.href='hobbies.html'" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Next</button>
+</div>
+<footer class="bg-gray-800 text-white py-4 px-8 flex flex-col justify-center items-center border-t border-gray-700">
     <nav>
         <ul>
-            <li><a href="https://x.com/N1sup">twitter</a></li>
-            <li><a href="https://linkedin.com/in/naol-gezahegne ">linkedin</a></li>
-            <li><a href="mailto:naolgezahegne@gmail.com">email</a></li>
+            <li class="hover:text-red-700"><a href="https://x.com/N1sup">twitter</a></li>
+            <li class="hover:text-red-700"><a href="https://linkedin.com/in/naol-gezahegne ">linkedin</a></li>
+            <li class="hover:text-red-700"><a href="mailto:naolgezahegne@gmail.com">email</a></li>
         </ul>
     </nav>
     <p>&copy; 2023 Naol. All rights reserved.</p>

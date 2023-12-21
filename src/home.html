@@ -4,40 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naol's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="page">
-         <header>
-            <nav>
-                <h2 class="logo">Naol's <span>Portfolio</span></h2>
-                <ul>
-                    <li> <a href="home.html">Home</a></li>
-                    <li><a href="about.html" target="_blank">About Me</a></li>
-                    <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="cv.html" target="_blank">CV</a></li>
+<body class="text-white bg-slate-900">
+      <header>
+        <nav>
+            <h2 class="text-red-400 text-2xl py-4">Naol's <span>Portfolio</span></h2>
+            <ul class="flex absolute top-0 right-0 space-x-4 text-gray-500 p-2">
+                <li class="text-xl hover:text-red-700"><a href="home.html" target="_blank">Home</a></li>
+                <li class="text-xl hover:text-red-700"><a href="about.html" target="_blank">About</a></li>
+                <li class="text-xl hover:text-red-700"><a href="hobbies.html" target="_blank">Hobbies</a></li>
+                <li class="text-xl hover:text-red-700"><a href="contact.html" target="_blank">Contact</a></li>
+                <li class="text-xl hover:text-red-700"><a href="cv.html" target="_blank">CV</a></li>
             </ul>
-            
         </nav>
     </header>
-        <section class="content">
-                <h3>Hello, My Name is</h3>
-                <h1>Naol Gezahegne</h1>
-                <h2>I am a Software Engineering Student.</h2>
-        </section>
+        <section class="container">
+                <h3 class="text-xl">Hello, My Name is</h3>
+                <h1 class="text-7xl py-3 font-bold">Naol <span class="text-red-500">Gezahegne</span></h1>
+                <h2 class="text-2xl">I am a Software Engineering Student.</h2>
     </div>
-    <button onclick="window.location.href='about.html'">Next</button>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="https://x.com/N1sup">twitter</a></li>
-                <li><a href="https://linkedin.com/in/naol-gezahegne">linkedin</a></li>
-                <li><a href="mailto:naolgezahegne@gmail.com">email</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Naol. All rights reserved.</p>
-    </footer>
+    <button onclick="window.location.href='about.html'" class="mt-4 my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Next</button>
+    <footer class="bg-gray-800 w-full fixed bottom-0 text-white py-4 px-8 flex flex-col justify-center items-center border-t border-gray-700">
+      <nav>
+          <ul>
+              <li class="hover:text-red-700"><a href="https://x.com/N1sup">twitter</a></li>
+              <li class="hover:text-red-700"><a href="https://linkedin.com/in/naol-gezahegne ">linkedin</a></li>
+              <li class="hover:text-red-700"><a href="mailto:naolgezahegne@gmail.com">email</a></li>
+          </ul>
+      </nav>
+      <p>&copy; 2023 Naol. All rights reserved.</p>
+  </footer>
+      
      
 </body>
 </html>

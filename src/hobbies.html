@@ -4,60 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobbies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
+<body class="text-white bg-slate-900">
+   <header>
     <nav>
-        <h2 class="logo">Naol's <span>Portfolio</span></h2>
-        <ul>
-            <li> <a href="home.html" target="_blank">Home</a></li>
-            <li><a href="about.html" target="_blank">About</a></li>
-            <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-            <li><a href="cv.html" target="_blank">CV</a></li>
+        <h2 class="text-red-400 text-2xl py-4">Naol's <span>Portfolio</span></h2>
+        <ul class="flex absolute top-0 right-0 space-x-4 text-gray-500 p-2">
+            <li class="text-xl hover:text-red-700"><a href="home.html" target="_blank">Home</a></li>
+            <li class="text-xl hover:text-red-700"><a href="about.html" target="_blank">About</a></li>
+            <li class="text-xl hover:text-red-700"><a href="hobbies.html" target="_blank">Hobbies</a></li>
+            <li class="text-xl hover:text-red-700"><a href="contact.html" target="_blank">Contact</a></li>
+            <li class="text-xl hover:text-red-700"><a href="cv.html" target="_blank">CV</a></li>
         </ul>
     </nav>
 </header>
+<aside class="w-1/6 bg-gray-800 text-white p-4 rounded-lg">
+  <nav>
+    <ul>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#music">Music</a></li>
+    </ul>
+  </nav>
+</aside>
 <div class="hobby">
-  <h2 >My <span>Hobbies</span></h2>
+  <h2 class="text-4xl font-bold">My <span>Hobbies</span></h2>
 </div>
 <p>During my free time, I engage in various activities. I often find solace in the pages of novels and self-help books, a routine I gravitate towards when not immersed in my studies. Recently, I delved into the captivating narratives of <cite>Atomic Habits</cite> and <cite>To Kill a Mockingbird</cite>, finding them both enriching. My other hobbies are movies and music.</p>
-    <h3 id="movies">Movies</h3>
+    <h3 class="text-2xl font-bold" id="movies">Movies</h3>
     <p>Watching movies is a cherished pastime for me. It serves as a means to divert my mind and provides entertainment that fuels my inspiration for acquiring new knowledge. Notably, films such as <cite>Pursuit of Happyness</cite>, <cite>Good Will Hunting</cite>, and <cite>Coach Carter</cite> hold a special place as my favorites in the cinematic realm. here is my favorite qoute from <cite>pursuit of happyness</cite></p>
-    <blockquote>"As long as I kept my mental focus on destinations that were ahead, destinations that I had the audacity to dream might hold a red Ferrari of my own, I protected myself from despair. The future was uncertain, absolutely, and there were many hurdles, twists, and turns to come, but as long as I kept moving forward, one foot in front of the other, the voices of fear and shame, the messages from those who wanted me to believe that I wasn't good enough, would be stilled."</blockquote> 
+    <blockquote class="border-l-4 border-gray-300 rounded-lg italic text-blue-600">"As long as I kept my mental focus on destinations that were ahead, destinations that I had the audacity to dream might hold a red Ferrari of my own, I protected myself from despair. The future was uncertain, absolutely, and there were many hurdles, twists, and turns to come, but as long as I kept moving forward, one foot in front of the other, the voices of fear and shame, the messages from those who wanted me to believe that I wasn't good enough, would be stilled."</blockquote> 
     
-    <figure>
+    <figure class="w-96 flex m-8">
       <figcaption>My favorite movies</figcaption>
-      <img src="images/mv2.jpg" alt="pursuit of happyness">
-      <img src="images/mv3.jpg" alt="Coach Carter">
-      <img src="images/mv1.jpg" alt="Good will hunting">
+      <img class="mx-8 rounded-lg" src="images/mv2.jpg" alt="pursuit of happyness">
+      <img class="mx-8 rounded-lg" src="images/mv3.jpg" alt="Coach Carter">
+      <img class="mx-8  rounded-lg" src="images/mv1.jpg" alt="Good will hunting">
       
     </figure>
-    <h3 id="music">Music</h3>
+    <h3 class="text-2xl font-bold" id="music">Music</h3>
     <p>Beyond my enjoyment of movies and books, I also allocate time in my leisure for the pleasure of music. Delving into the soundscape is a cherished activity for me, and among my preferred artists are Bruno Mars, Kanye West, J Cole, and Adele, among others. Each artist brings a unique flavor to my playlist, offering a diverse range of musical experiences. Currently, one particular song has captured my attention, becoming a favorite in the present moment.</p>
     <audio src="images/Homecoming.mp3" controls muted>
       Your browser does not support the audio tag.
     </audio>
-    <aside>
-      <nav>
-        <ul>
-          <li><a href="#movies">Movies</a></li>
-          <li><a href="#music">Music</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <button onclick="window.location.href='about.html'">previous</button>
-<button onclick="window.location.href='contact.html'">Next</button>
-<footer>
+  <div class="my-4">
+      <button onclick="window.location.href='about.html'" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Previous</button>
+      <button onclick="window.location.href='contact.html'" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-2">Next</button>
+  </div>
+  <footer class="bg-gray-800 text-white py-4 px-8 flex flex-col justify-center items-center border-t border-gray-700">
     <nav>
         <ul>
-            <li><a href="https://x.com/N1sup">twitter</a></li>
-            <li><a href="https://linkedin.com/in/naol-gezahegne">linkedin</a></li>
-            <li><a href="mailto:naolgezahegne@gmail.com">email</a></li>
+            <li class="hover:text-red-700"><a href="https://x.com/N1sup">twitter</a></li>
+            <li class="hover:text-red-700"><a href="https://linkedin.com/in/naol-gezahegne ">linkedin</a></li>
+            <li class="hover:text-red-700"><a href="mailto:naolgezahegne@gmail.com">email</a></li>
         </ul>
     </nav>
+    <p>&copy; 2023 Naol. All rights reserved.</p>
 </footer>
-<p>&copy; 2023 Naol. All rights reserved.</p>
 
 </body>
 </html>
